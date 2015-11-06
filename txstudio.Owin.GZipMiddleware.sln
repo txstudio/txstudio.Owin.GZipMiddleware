@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "txstudio.Owin.GZipMiddleware", "txstudio.Owin.GZipMiddleware\txstudio.Owin.GZipMiddleware.csproj", "{EE0007AA-7894-44A6-9687-33D69970BC06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "txstudio.Owin.GZipMiddleware.Client", "txstudio.Owin.GZipMiddleware.Client\txstudio.Owin.GZipMiddleware.Client.csproj", "{6FFBF1E4-F6E6-40FB-88F5-047D22904A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "txstudio.Owin.GZipMiddleware.SelfHost", "txstudio.Owin.GZipMiddleware.SelfHost\txstudio.Owin.GZipMiddleware.SelfHost.csproj", "{12C20485-2E95-4F59-AB71-883DA23B0AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "txstudio.Owin.GZipMiddleware.WebApp", "txstudio.Owin.GZipMiddleware.WebApp\txstudio.Owin.GZipMiddleware.WebApp.csproj", "{1A8019C1-7637-41F5-B5A4-9FF4D6445DC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE0007AA-7894-44A6-9687-33D69970BC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0007AA-7894-44A6-9687-33D69970BC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0007AA-7894-44A6-9687-33D69970BC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0007AA-7894-44A6-9687-33D69970BC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFBF1E4-F6E6-40FB-88F5-047D22904A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFBF1E4-F6E6-40FB-88F5-047D22904A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFBF1E4-F6E6-40FB-88F5-047D22904A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFBF1E4-F6E6-40FB-88F5-047D22904A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C20485-2E95-4F59-AB71-883DA23B0AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C20485-2E95-4F59-AB71-883DA23B0AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C20485-2E95-4F59-AB71-883DA23B0AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C20485-2E95-4F59-AB71-883DA23B0AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8019C1-7637-41F5-B5A4-9FF4D6445DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8019C1-7637-41F5-B5A4-9FF4D6445DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8019C1-7637-41F5-B5A4-9FF4D6445DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8019C1-7637-41F5-B5A4-9FF4D6445DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
