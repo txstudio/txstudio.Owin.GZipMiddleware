@@ -66,14 +66,18 @@ namespace txstudio.Owin.GZipMiddleware.Client
             #region 設定要傳遞的 Stream 內容
             /*
                 需要設定 Http Header 為 
-                Content-Typ = application/gzip , Content-Encoding = gzip 
+                Content-Typ = application/gzip
                 才可進行伺服器端解壓縮作業
             */
             _streamContent = new StreamContent(new MemoryStream(_afterCompress));
             _streamContent.Headers.ContentType = new MediaTypeHeaderValue("application/gzip");
-            _streamContent.Headers.ContentEncoding.Add("gzip");
             #endregion
 
+            /*
+            // 如果你要傳遞 application/json 內容，將上方的程式碼修改成下面方式
+            _streamContent = new StreamContent(new MemoryStream(_beforeCompress));
+            _streamContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            */
 
             var _response = _client.PostAsync(_relativeUrl, _streamContent).Result;
 
