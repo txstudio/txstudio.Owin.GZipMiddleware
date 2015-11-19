@@ -25,13 +25,13 @@ namespace txstudio.Owin.GZipMiddleware
             Byte[] _unzip;
             Byte[] _zip;
 
-            await _requset.Body.CopyToAsync(_gzipStream);
-            _gzipStream.Position = 0;
-
             //如果再 Http Header 條件符合下列項目才進行解壓縮作業
             if (_requset.Headers["Content-Type"] == "application/gzip"
                 && _requset.Headers["Content-Encoding"] == "gzip")
             {
+                await _requset.Body.CopyToAsync(_gzipStream);
+                _gzipStream.Position = 0;
+
                 //如果包含壓縮內容，進行解壓縮
                 _zip = _gzipStream.ToArray();
                 _unzip = this.GZipUncompress(_zip);
